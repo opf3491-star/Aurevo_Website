@@ -1,0 +1,314 @@
+{
+ "whatsapp": "8801966173158",
+ "sets": [],
+ "products": [
+  {
+   "id": "dining_chair_02",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Dining Chair",
+    "bn": "ডাইনিং চেয়ার"
+   },
+   "type": {
+    "en": "Chair",
+    "bn": "চেয়ার"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "dining_chair_02.glb"
+  },
+  {
+   "id": "drawer_cabinet",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Drawer Cabinet",
+    "bn": "ড্রয়ার কেবিনেট"
+   },
+   "type": {
+    "en": "Cabinet",
+    "bn": "কেবিনেট"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "drawer_cabinet.glb"
+  },
+  {
+   "id": "metal_office_desk",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Metal Office Desk",
+    "bn": "মেটাল অফিস ডেস্ক"
+   },
+   "type": {
+    "en": "Table",
+    "bn": "টেবিল"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "metal_office_desk.glb"
+  },
+  {
+   "id": "metal_stool_01",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Metal Stool",
+    "bn": "মেটাল স্টুল"
+   },
+   "type": {
+    "en": "Stool",
+    "bn": "স্টুল"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "metal_stool_01.glb"
+  },
+  {
+   "id": "mid_century_lounge_chair",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Mid-Century Lounge Chair",
+    "bn": "মিড-সেঞ্চুরি লাউঞ্জ চেয়ার"
+   },
+   "type": {
+    "en": "Chair",
+    "bn": "চেয়ার"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "mid_century_lounge_chair.glb"
+  },
+  {
+   "id": "modern_coffee_table_01",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Modern Coffee Table",
+    "bn": "মডার্ন কফি টেবিল"
+   },
+   "type": {
+    "en": "Table",
+    "bn": "টেবিল"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "modern_coffee_table_01.glb"
+  },
+  {
+   "id": "painted_wooden_chair_01",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Painted Wooden Chair",
+    "bn": "পেইন্টেড কাঠের চেয়ার"
+   },
+   "type": {
+    "en": "Chair",
+    "bn": "চেয়ার"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "painted_wooden_chair_01.glb"
+  },
+  {
+   "id": "side_table_01",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Side Table",
+    "bn": "সাইড টেবিল"
+   },
+   "type": {
+    "en": "Table",
+    "bn": "টেবিল"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "side_table_01.glb"
+  },
+  {
+   "id": "sofa_03",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Sofa",
+    "bn": "সোফা"
+   },
+   "type": {
+    "en": "Sofa",
+    "bn": "সোফা"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "sofa_03.glb"
+  },
+  {
+   "id": "standing_picture_frame_02",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Standing Picture Frame",
+    "bn": "স্ট্যান্ডিং ছবির ফ্রেম"
+   },
+   "type": {
+    "en": "Home Decor",
+    "bn": "হোম ডেকর"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": null
+  },
+  {
+   "id": "steel_frame_shelves_01",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Steel Frame Shelves",
+    "bn": "স্টিল ফ্রেম তাক"
+   },
+   "type": {
+    "en": "Shelving",
+    "bn": "তাক"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "steel_frame_shelves_01.glb"
+  },
+  {
+   "id": "vintage_wooden_drawer_01",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Vintage-style Wooden Drawer",
+    "bn": "ভিনটেজ-স্টাইল কাঠের ড্রয়ার"
+   },
+   "type": {
+    "en": "Cabinet",
+    "bn": "কেবিনেট"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "vintage_wooden_drawer_01.glb"
+  },
+  {
+   "id": "wooden_display_shelves_01",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Wooden Display Shelves",
+    "bn": "কাঠের ডিসপ্লে তাক"
+   },
+   "type": {
+    "en": "Shelving",
+    "bn": "তাক"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "wooden_display_shelves_01.glb"
+  },
+  {
+   "id": "wooden_table_02",
+   "kind": "single",
+   "division": "ORIGINALS",
+   "condition": "new",
+   "name": {
+    "en": "Wooden Table",
+    "bn": "কাঠের টেবিল"
+   },
+   "type": {
+    "en": "Table",
+    "bn": "টেবিল"
+   },
+   "price": null,
+   "makingDays": null,
+   "deliveryDays": null,
+   "dimensions": null,
+   "materials": null,
+   "colour": null,
+   "description": null,
+   "model": "wooden_table_02.glb"
+  }
+ ]
+}

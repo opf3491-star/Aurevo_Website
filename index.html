@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="bn" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AUREVO — Crafted for Living. Designed to Last.</title>
+<meta name="description" content="AUREVO — বাংলাদেশের প্রিমিয়াম ফার্নিচার ও লাইফস্টাইল ব্র্যান্ড। Premium furniture & lifestyle, Bangladesh.">
+<meta property="og:title" content="AUREVO — Crafted for Living. Designed to Last.">
+<meta property="og:image" content="logo-star.png">
+<meta name="theme-color" content="#151512">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#141411;--bg2:#1c1b17;--text:#f2eee6;--muted:#aaa397;--line:rgba(225,207,171,.2);--gold:#c9ad7a;--gold2:#e1cca4;--g1:rgba(255,255,255,.11);--g2:rgba(255,255,255,.02);--gb:rgba(255,255,255,.24);--hi:rgba(255,255,255,.4);--sh:rgba(0,0,0,.35);--wall:#26231d;--floor:#171612;--logo:none}
+[data-theme=light]{--bg:#f3f0e9;--bg2:#e9e3d8;--text:#25231e;--muted:#6e685d;--line:rgba(100,82,53,.22);--gold:#8c6c3c;--gold2:#6f5329;--g1:rgba(255,255,255,.65);--g2:rgba(255,255,255,.18);--gb:rgba(110,90,60,.28);--hi:rgba(255,255,255,.95);--sh:rgba(60,45,25,.14);--wall:#e4dccd;--floor:#cdbfa8;--logo:brightness(.3) contrast(1.2)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 "DM Sans","Hind Siliguri",sans-serif;overflow-x:hidden;transition:background .3s,color .3s}
+[lang=bn] body{font-family:"Hind Siliguri","DM Sans",sans-serif}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit;color:inherit}img{max-width:100%}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1200px,calc(100% - 32px));margin:auto}
+/* clear glass: transparent, thin edge, natural highlight, NO blur */
+.glass{background:linear-gradient(135deg,var(--g1),var(--g2) 45%,var(--g1));border:1px solid var(--gb);border-radius:18px;box-shadow:inset 0 1px 0 var(--hi),inset 0 -1px 0 var(--g2),0 12px 34px var(--sh)}
+header{position:sticky;top:0;z-index:30;padding:10px 0;padding-top:max(10px,env(safe-area-inset-top))}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px}
+.brand{display:flex;align-items:center;gap:10px}.brand img.s{height:34px;filter:var(--logo)}.brand img.w{height:15px;filter:var(--logo)}
+.links{display:flex;gap:22px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.links a:hover{color:var(--gold2)}
+.tools{display:flex;gap:8px}.chip{padding:7px 13px;border-radius:99px;border:1px solid var(--gb);background:linear-gradient(135deg,var(--g1),var(--g2));font-size:12px;cursor:pointer;box-shadow:inset 0 1px 0 var(--hi)}
+.chip:hover{border-color:var(--gold)}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;min-height:620px;padding:30px 0 60px}
+.eyebrow{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold2)}
+h1,h2,h3{font-family:"Playfair Display","Hind Siliguri",serif;font-weight:500;margin:0}
+.hero h1{font-size:clamp(40px,6vw,76px);line-height:1.08;margin:18px 0;letter-spacing:-.02em}.hero h1 em{color:var(--gold2);font-style:normal}
+.hero p{color:var(--muted);max-width:440px}
+.btn{display:inline-flex;padding:13px 22px;border:1px solid var(--gold);border-radius:99px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;background:none}
+.btn.p{background:var(--gold);color:#171612;border-color:var(--gold)}.btn[disabled]{opacity:.5;cursor:not-allowed}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.room{position:relative;height:500px;border-radius:22px;overflow:hidden;background:linear-gradient(var(--wall) 0 62%,var(--floor) 62%);border:1px solid var(--gb)}
+.room:before{content:"";position:absolute;left:0;right:0;top:62%;height:1px;background:var(--line)}
+.room:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 55%,rgba(201,173,122,.2),transparent 60%);pointer-events:none}
+.win{position:absolute;top:9%;left:9%;width:26%;height:36%;border:1px solid var(--gb);background:linear-gradient(160deg,var(--g1),transparent);border-radius:6px}
+.room img.rs{position:absolute;left:50%;top:44%;height:180px;transform:translate(-50%,-50%);opacity:.9;filter:var(--logo);transition:opacity .6s}
+.room model-viewer{position:absolute;inset:0;width:100%;height:100%;background:transparent;--poster-color:transparent;z-index:2;opacity:0;transition:opacity .8s}
+.room.on model-viewer{opacity:1}.room.on img.rs{opacity:0}
+.room small{position:absolute;left:16px;bottom:12px;z-index:3;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+section.s{padding:64px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap;margin-bottom:26px}
+.head h2{font-size:clamp(30px,4vw,46px);line-height:1.15;margin-top:8px}.head p{max-width:380px;color:var(--muted);margin:0;font-size:13px}
+.divs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.div{padding:26px;min-height:170px}.div small{color:var(--gold2);letter-spacing:.18em;font-size:10px}.div h3{font-size:23px;margin:16px 0 6px}.div p{color:var(--muted);font-size:13px;margin:0}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;padding:12px}
+.bar input,.bar select{background:transparent;border:1px solid var(--gb);border-radius:12px;padding:10px 12px;font-size:13px}.bar select option{background:var(--bg)}.bar input[type=search]{flex:1;min-width:170px}.bar input[type=number]{width:118px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{cursor:pointer;overflow:hidden;transition:transform .25s,border-color .25s;text-align:left;padding:0;display:block;width:100%}.card:hover{transform:translateY(-4px);border-color:var(--gold)}
+.cv{height:190px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 60%,rgba(201,173,122,.18),transparent 65%)}.cv img{height:84px;filter:var(--logo);opacity:.75}
+.ci{padding:14px}.cm{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}.ci h3{font-size:17px;margin:9px 0 4px}.ci p{margin:0;font-size:12px;color:var(--muted)}
+.empty{padding:34px;text-align:center;color:var(--muted)}
+.sub{font-size:13px;color:var(--muted);margin:0 0 14px}
+dialog{border:0;padding:0;background:none;width:min(920px,calc(100% - 20px));max-height:92vh;color:var(--text)}dialog::backdrop{background:rgba(0,0,0,.7)}
+.dg{display:grid;grid-template-columns:1.1fr .9fr;background:var(--bg);border:1px solid var(--gb);border-radius:20px;overflow:hidden}
+.dv{position:relative;min-height:420px;background:var(--bg2);display:grid;place-items:center}.dv model-viewer{position:absolute;inset:0;width:100%;height:100%;background:transparent;--poster-color:transparent}
+.dv .fb{padding:24px;text-align:center;color:var(--muted);font-size:13px}.dc{padding:28px;align-self:center}.dc h2{font-size:30px;margin:10px 0}.dc dl{margin:14px 0;font-size:13px}.dc dt{color:var(--muted);float:left;clear:left;width:46%}.dc dd{margin:0 0 6px 46%}
+.x{position:absolute;top:10px;right:10px;z-index:5}
+.story{display:grid;grid-template-columns:1fr 1fr;overflow:hidden}.sv{min-height:300px;display:grid;place-items:center;background:radial-gradient(ellipse,rgba(201,173,122,.22),transparent 62%)}.sv img{height:190px;filter:var(--logo)}.sc{padding:clamp(24px,5vw,56px);align-self:center}.sc h2{font-size:36px;margin:12px 0}.sc p{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:36px 0 30px;margin-top:30px;color:var(--muted);font-size:12px}.fr{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+/* sections slide in from the right */
+.js .rv{opacity:0;transform:translateX(80px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.card{transition:none}}
+@media(max-width:900px){.links{display:none}.hero{grid-template-columns:1fr;min-height:0}.room{order:-1;height:340px}.divs{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.dg,.story{grid-template-columns:1fr}.dv{min-height:320px}}
+@media(max-width:480px){.grid{gap:9px}.cv{height:140px}.ci{padding:10px}.ci h3{font-size:14px}.brand img.w{display:none}.bar input[type=number]{width:46%}}
+@media(max-width:300px){.hero p,.head p,.divs,.story{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="nav glass">
+<a class="brand" href="#top" aria-label="AUREVO"><img class="s" src="logo-star.png" alt="" width="20" height="34"><img class="w" src="logo-word.png" alt="AUREVO" width="90" height="15"></a>
+<nav class="links"><a href="#collection" data-i="nav1"></a><a href="#divisions" data-i="nav2"></a><a href="#story" data-i="nav3"></a></nav>
+<div class="tools"><button class="chip" id="lang" aria-label="Language">EN</button><button class="chip" id="theme" aria-label="Theme">◐</button></div>
+</div></div></header>
+<main id="top">
+<section class="wrap hero">
+<div class="rv"><div class="eyebrow" data-i="eyebrow"></div><h1 data-i="h1"></h1><p data-i="lead"></p><div class="acts"><a class="btn p" href="#collection" data-i="cta1"></a><a class="btn" href="#story" data-i="cta2"></a></div></div>
+<div class="room rv" id="room"><div class="win"></div><img class="rs" src="logo-star.png" alt=""><small data-i="roomnote"></small></div>
+</section>
+<section class="wrap s rv" id="divisions"><div class="head"><div><div class="eyebrow" data-i="dEye"></div><h2 data-i="dTitle"></h2></div><p data-i="dText"></p></div>
+<div class="divs"><article class="div glass"><small>01 / SELECT</small><h3>AUREVO SELECT</h3><p data-i="d1"></p></article><article class="div glass"><small>02 / RESTORED</small><h3>AUREVO RESTORED</h3><p data-i="d2"></p></article><article class="div glass"><small>03 / ORIGINALS</small><h3>AUREVO ORIGINALS</h3><p data-i="d3"></p></article></div></section>
+<section class="wrap s rv" id="collection"><div class="head"><div><div class="eyebrow" data-i="cEye"></div><h2 data-i="cTitle"></h2></div><p data-i="cText"></p></div>
+<div class="bar glass"><input id="q" type="search" data-ph="search"><select id="type"></select><select id="div"><option value="" data-i="allDiv"></option><option>SELECT</option><option>RESTORED</option><option>ORIGINALS</option></select>
+<input id="pmin" type="number" min="5000" max="1000000" step="500" data-ph="pmin"><input id="pmax" type="number" min="5000" max="1000000" step="500" data-ph="pmax">
+<select id="sort"><option value="" data-i="sort0"></option><option value="lh" data-i="sort1"></option><option value="hl" data-i="sort2"></option></select></div>
+<h3 data-i="singles" style="margin-bottom:6px"></h3><p class="sub" data-i="singlesSub"></p><div class="grid" id="gridS"></div>
+<h3 data-i="sets" style="margin:42px 0 6px"></h3><p class="sub" data-i="setsSub"></p><div class="grid" id="gridK"></div>
+</section>
+<section class="wrap s rv" id="story"><div class="story glass"><div class="sv"><img src="logo-star.png" alt=""></div><div class="sc"><div class="eyebrow" data-i="pEye"></div><h2 data-i="pTitle"></h2><p data-i="pText"></p><a class="btn" href="#collection" data-i="cta1"></a></div></div></section>
+</main>
+<footer><div class="wrap fr"><div><img src="logo-word.png" alt="AUREVO" height="14" style="filter:var(--logo)"><br><span data-i="foot"></span></div><div>© <span id="yr"></span> AUREVO</div></div></footer>
+<dialog id="dlg"><div class="dg"><button class="chip x" id="close" data-i="close"></button><div class="dv" id="dv"></div><div class="dc"><div class="eyebrow" id="dEyebrow"></div><h2 id="dName"></h2><dl id="dList"></dl><a class="btn p" id="wa" target="_blank" rel="noopener noreferrer"></a></div></div></dialog>
+<script>
+document.documentElement.classList.add('js');
+const T={bn:{nav1:'কালেকশন',nav2:'আমাদের বিভাগ',nav3:'আমাদের দর্শন',eyebrow:'ফার্নিচার · অবজেক্ট · লিভিং',h1:'অর্থপূর্ণ জীবনের জন্য <em>জায়গা</em> তৈরি করুন।',lead:'যত্ন করে বাছাই করা, নিপুণভাবে পুনরুদ্ধার করা এবং নিজস্ব নকশায় তৈরি ফার্নিচার — আপনার স্থানকে আপনার মতো করে তুলতে।',cta1:'কালেকশন দেখুন',cta2:'AUREVO সম্পর্কে',roomnote:'AUREVO · উদ্দেশ্যপূর্ণ অবজেক্ট',dEye:'AUREVO-র তিন বিভাগ',dTitle:'ভালোভাবে বাঁচার তিনটি পথ।',dText:'প্রতিটি আসবাবের নিজস্ব গল্প আছে।',d1:'ভালো অবস্থার পুরোনো আসবাব, যত্ন করে বাছাই করা।',d2:'মেরামত, রিফিনিশ ও পুনরুদ্ধার করা আসবাব।',d3:'আমাদের নিজস্ব নকশায় তৈরি নতুন আসবাব।',cEye:'কালেকশন',cTitle:'যে আসবাবের সঙ্গে বাঁচতে ইচ্ছে করে।',cText:'কার্ডে ক্লিক করলে বিস্তারিত ও 3D দেখা যাবে।',allDiv:'সব বিভাগ',allType:'সব ধরন',search:'আসবাব খুঁজুন…',pmin:'সর্বনিম্ন ৳',pmax:'সর্বোচ্চ ৳',sort0:'সাজান',sort1:'দাম: কম → বেশি',sort2:'দাম: বেশি → কম',singles:'একক আসবাব',singlesSub:'আলাদা আলাদা আসবাব।',sets:'ফার্নিচার সেট',setsSub:'সোফা সেট, ডাইনিং সেট, বেডরুম সেট ইত্যাদি।',setsEmpty:'ফার্নিচার সেট শীঘ্রই আসছে।',none:'কোনো আসবাব পাওয়া যায়নি।',pEye:'আমাদের দর্শন',pTitle:'Crafted for Living. Designed to Last.',pText:'বিবেচনাপ্রসূত নকশা, টেকসই উপাদান এবং ঘর সাজানোর আরও ভাবনাপূর্ণ উপায় — এটাই AUREVO।',foot:'Premium furniture & lifestyle · Bangladesh',close:'বন্ধ ✕',tbc:'শীঘ্রই জানানো হবে',condNew:'নতুন',price:'দাম',cond:'অবস্থা',making:'তৈরির সময়',delivery:'ডেলিভারি',dim:'মাপ',mat:'উপাদান',col:'রং',days:'দিন',order:'WhatsApp-এ অর্ডার করুন',noModel:'এই পণ্যের 3D মডেল এখনও প্রস্তুত নয়।',loading3d:'3D লোড হচ্ছে…',err3d:'3D লোড করা যায়নি।',ord:'আমি এই আসবাবটি সম্পর্কে জানতে চাই',mod:'মডেল',type:'ধরন'},
+en:{nav1:'Collection',nav2:'Our Divisions',nav3:'Our Philosophy',eyebrow:'Furniture · Objects · Living',h1:'Make room for <em>meaningful</em> living.',lead:'Thoughtfully selected, beautifully restored, and originally crafted furniture for spaces that feel like you.',cta1:'Explore Collection',cta2:'Discover AUREVO',roomnote:'AUREVO · Objects with purpose',dEye:'The AUREVO edit',dTitle:'Three ways to live better.',dText:'Each piece has its own story.',d1:'Well-kept pre-owned furniture, carefully selected.',d2:'Furniture repaired, refinished and restored.',d3:'New furniture shaped by our own design and making.',cEye:'The collection',cTitle:'Pieces to live with.',cText:'Tap a card for details and the 3D view.',allDiv:'All divisions',allType:'All types',search:'Search furniture…',pmin:'Min ৳',pmax:'Max ৳',sort0:'Sort',sort1:'Price: low → high',sort2:'Price: high → low',singles:'Single Furniture',singlesSub:'Individual pieces.',sets:'Furniture Sets',setsSub:'Sofa sets, dining sets, bedroom sets and more.',setsEmpty:'Furniture sets are coming soon.',none:'No furniture found.',pEye:'Our philosophy',pTitle:'Crafted for Living. Designed to Last.',pText:'Considered design, enduring materials and a more thoughtful way to furnish a home — that is AUREVO.',foot:'Premium furniture & lifestyle · Bangladesh',close:'Close ✕',tbc:'To be announced',condNew:'New',price:'Price',cond:'Condition',making:'Making time',delivery:'Delivery',dim:'Dimensions',mat:'Materials',col:'Colour',days:'days',order:'Order on WhatsApp',noModel:'3D model for this product is not ready yet.',loading3d:'Loading 3D…',err3d:'Could not load 3D.',ord:'I would like to know more about this furniture',mod:'Model',type:'Type'}};
+let L=localStorage.getItem('aurevo-lang')||'bn',D=null;const $=s=>document.querySelector(s),t=k=>T[L][k];
+const fmt=n=>'৳'+new Intl.NumberFormat(L==='bn'?'bn-BD':'en-US').format(n);
+function applyLang(){document.documentElement.lang=L;$('#lang').textContent=L==='bn'?'EN':'বাংলা';document.querySelectorAll('[data-i]').forEach(e=>{const v=t(e.dataset.i);e.dataset.i==='h1'?e.innerHTML=v:e.textContent=v});document.querySelectorAll('[data-ph]').forEach(e=>e.placeholder=t(e.dataset.ph));if(D){buildTypes();render()}}
+function applyTheme(m){document.documentElement.dataset.theme=m;localStorage.setItem('aurevo-theme',m);$('meta[name=theme-color]').content=m==='dark'?'#151512':'#f3f0e9'}
+$('#theme').onclick=()=>applyTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+$('#lang').onclick=()=>{L=L==='bn'?'en':'bn';localStorage.setItem('aurevo-lang',L);applyLang()};
+function buildTypes(){const s=$('#type'),cur=s.value;s.innerHTML=`<option value="">${t('allType')}</option>`;[...new Map(D.products.map(p=>[p.type.en,p.type])).values()].forEach(x=>s.add(new Option(x[L],x.en)));s.value=cur}
+function list(arr,box,emptyKey){box.innerHTML='';if(!arr.length){box.innerHTML=`<div class="empty glass" style="grid-column:1/-1">${t(emptyKey)}</div>`;return}
+arr.forEach(p=>{const b=document.createElement('button');b.className='card glass';b.innerHTML=`<div class="cv"><img src="logo-star.png" alt="" loading="lazy"></div><div class="ci"><div class="cm"><span>${p.division}</span><span>${p.type[L]}</span></div><h3>${p.name[L]}</h3><p>${p.price?fmt(p.price):t('tbc')}</p></div>`;b.setAttribute('aria-label',p.name[L]);b.onclick=()=>open(p);box.appendChild(b)})}
+function render(){const q=$('#q').value.toLowerCase(),ty=$('#type').value,dv=$('#div').value,mn=+$('#pmin').value||0,mx=+$('#pmax').value||0,so=$('#sort').value;
+let a=D.products.filter(p=>(!q||(p.name.en+p.name.bn+p.type.en).toLowerCase().includes(q))&&(!ty||p.type.en===ty)&&(!dv||p.division===dv)&&((!mn&&!mx)||(p.price&&(!mn||p.price>=mn)&&(!mx||p.price<=mx))));
+if(so)a.sort((x,y)=>(x.price==null)-(y.price==null)||(so==='lh'?x.price-y.price:y.price-x.price));
+list(a,$('#gridS'),'none');list(D.sets||[],$('#gridK'),'setsEmpty')}
+['q','type','div','pmin','pmax','sort'].forEach(i=>$('#'+i).addEventListener('input',render));
+let mvP;function loadMV(){return mvP||(mvP=new Promise((ok,no)=>{if(customElements.get('model-viewer'))return ok();const s=document.createElement('script');s.type='module';s.src='https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js';s.onload=()=>ok();s.onerror=no;document.head.appendChild(s)}))}
+function open(p){const dv=$('#dv');dv.innerHTML='';$('#dEyebrow').textContent='AUREVO '+p.division;$('#dName').textContent=p.name[L];
+const r=[[t('type'),p.type[L]],[t('cond'),p.condition==='new'?t('condNew'):null],[t('price'),p.price?fmt(p.price):t('tbc')],[t('making'),p.makingDays?p.makingDays+' '+t('days'):t('tbc')],[t('delivery'),p.deliveryDays?p.deliveryDays+' '+t('days'):null],[t('dim'),p.dimensions],[t('mat'),p.materials],[t('col'),p.colour]].filter(x=>x[1]);
+$('#dList').innerHTML=r.map(x=>`<dt>${x[0]}</dt><dd>${x[1]}</dd>`).join('');
+const w=$('#wa'),num=(D.whatsapp||'').replace(/\D/g,'');w.textContent=t('order');
+if(/^8801\d{9}$/.test(num)){const m=`AUREVO — ${p.name[L]}${p.price?' ('+fmt(p.price)+')':''}\n${t('ord')}\n${location.href.split('#')[0]}`;w.href=`https://wa.me/${num}?text=${encodeURIComponent(m)}`;w.removeAttribute('aria-disabled')}else{w.removeAttribute('href');w.setAttribute('aria-disabled','true');w.style.opacity=.5}
+if(!p.model){dv.innerHTML=`<div class="fb">${t('noModel')}</div>`}else{dv.innerHTML=`<div class="fb" id="ld">${t('loading3d')}</div>`;loadMV().then(()=>{const m=document.createElement('model-viewer');m.src=p.model;m.setAttribute('camera-controls','');m.setAttribute('touch-action','pan-y');m.setAttribute('shadow-intensity','1');m.setAttribute('exposure','1');m.setAttribute('environment-image','neutral');m.setAttribute('alt',p.name[L]+' 3D');m.addEventListener('load',()=>{const l=$('#ld');l&&l.remove()});m.addEventListener('error',()=>{dv.innerHTML=`<div class="fb">${t('err3d')}</div>`});dv.appendChild(m)}).catch(()=>{dv.innerHTML=`<div class="fb">${t('err3d')}</div>`})}
+$('#dlg').showModal()}
+$('#close').onclick=()=>$('#dlg').close();$('#dlg').addEventListener('click',e=>{if(e.target.id==='dlg')e.target.close()});$('#dlg').addEventListener('close',()=>$('#dv').innerHTML='');
+// hero 3D loads only after page is idle, and never on low-memory / data-saver phones
+function heroModel(){const c=navigator.connection||{};if(c.saveData||(navigator.deviceMemory&&navigator.deviceMemory<=2))return;loadMV().then(()=>{const m=document.createElement('model-viewer');m.src='mid_century_lounge_chair.glb';['camera-controls','disable-pan','disable-zoom'].forEach(a=>m.setAttribute(a,''));m.setAttribute('interaction-prompt','none');m.setAttribute('touch-action','pan-y');m.setAttribute('environment-image','neutral');m.setAttribute('shadow-intensity','.8');m.setAttribute('alt','AUREVO 3D');m.addEventListener('load',()=>$('#room').classList.add('on'));$('#room').appendChild(m)}).catch(()=>{})}
+addEventListener('load',()=>('requestIdleCallback'in window?requestIdleCallback(heroModel,{timeout:4000}):setTimeout(heroModel,2500)));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+applyTheme(localStorage.getItem('aurevo-theme')||'dark');$('#yr').textContent=new Date().getFullYear();
+fetch('products.json').then(r=>r.json()).then(j=>{D=j;buildTypes();applyLang()}).catch(()=>{$('#gridS').innerHTML='<div class="empty glass">products.json</div>'});applyLang();
+</script>
+</body>
+</html>
