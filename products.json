@@ -15,14 +15,21 @@
     "en": "Chair",
     "bn": "চেয়ার"
    },
-   "price": null,
+   "price": 9999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "গদিযুক্ত আসন ও পিঠ, কালো পা",
+    "en": "Cushioned seat and back, dark legs"
+   },
    "colour": null,
-   "description": null,
-   "model": "dining_chair_02.glb"
+   "description": {
+    "bn": "উঁচু পিঠ ও টাফটেড গদিযুক্ত ডাইনিং চেয়ার।",
+    "en": "High-back dining chair with a tufted, cushioned seat."
+   },
+   "model": "dining_chair_02.glb",
+   "materials_note": null
   },
   {
    "id": "drawer_cabinet",
@@ -37,14 +44,25 @@
     "en": "Cabinet",
     "bn": "কেবিনেট"
    },
-   "price": null,
+   "price": 14999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠ ও ধাতব ফ্রেম",
+    "en": "Wood and metal frame"
+   },
    "colour": null,
-   "description": null,
-   "model": "drawer_cabinet.glb"
+   "description": {
+    "bn": "ধাতব ফ্রেমে কাঠের ড্রয়ার ও খোলা তাকযুক্ত স্টোরেজ ইউনিট।",
+    "en": "Storage unit with wooden drawers and open shelves on a metal frame."
+   },
+   "model": "drawer_cabinet.glb",
+   "size": {
+    "bn": "5/3",
+    "en": "5/3"
+   },
+   "materials_note": null
   },
   {
    "id": "metal_office_desk",
@@ -59,14 +77,26 @@
     "en": "Table",
     "bn": "টেবিল"
    },
-   "price": null,
+   "price": 24999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "ধাতব পা, সাদা ডেস্ক",
+    "en": "White desk on metal legs"
+   },
    "colour": null,
-   "description": null,
-   "model": "metal_office_desk.glb"
+   "description": {
+    "bn": "ধাতব পায়ায় সাদা অফিস ডেস্ক, দুই পাশে ড্রয়ার।",
+    "en": "White office desk on metal legs with drawers on both sides."
+   },
+   "model": "metal_office_desk.glb",
+   "size": {
+    "bn": "5/3 ফুট",
+    "en": "5/3 feet"
+   },
+   "madeToOrder": true,
+   "materials_note": null
   },
   {
    "id": "metal_stool_01",
@@ -81,14 +111,25 @@
     "en": "Stool",
     "bn": "স্টুল"
    },
-   "price": null,
+   "price": 8999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "মেটাল ফ্রেম, গদিযুক্ত আসন",
+    "en": "Metal frame, cushioned seat"
+   },
    "colour": null,
-   "description": null,
-   "model": "metal_stool_01.glb"
+   "description": {
+    "bn": "ধাতব কাঠামোর উঁচু বার স্টুল, গদিযুক্ত আসন।",
+    "en": "Tall bar stool with a metal frame and cushioned seat."
+   },
+   "model": "metal_stool_01.glb",
+   "size": {
+    "bn": "উচ্চতা ২ ফুট",
+    "en": "Height 2 feet"
+   },
+   "materials_note": null
   },
   {
    "id": "mid_century_lounge_chair",
@@ -103,14 +144,21 @@
     "en": "Chair",
     "bn": "চেয়ার"
    },
-   "price": null,
+   "price": 19999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠের কাঠামো, গদি, ধাতব বেস",
+    "en": "Wood shell, cushioning, metal base"
+   },
    "colour": null,
-   "description": null,
-   "model": "mid_century_lounge_chair.glb"
+   "description": {
+    "bn": "ঘূর্ণায়মান ধাতব বেসের উপর আরামদায়ক লাউঞ্জ চেয়ার।",
+    "en": "Comfortable lounge chair on a swivel metal base."
+   },
+   "model": "mid_century_lounge_chair.glb",
+   "materials_note": null
   },
   {
    "id": "modern_coffee_table_01",
@@ -125,14 +173,41 @@
     "en": "Table",
     "bn": "টেবিল"
    },
-   "price": null,
+   "price": 14999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠের ফ্রেম; মার্বেল বা কাঠের টপ",
+    "en": "Wood frame; marble or wood top"
+   },
    "colour": null,
-   "description": null,
-   "model": "modern_coffee_table_01.glb"
+   "description": {
+    "bn": "কাঠের ফ্রেমের নিচু কফি টেবিল, দুটি টপ বিকল্প: মার্বেল ও কাঠ।",
+    "en": "Low coffee table with a wooden frame, in two top options: marble and wood."
+   },
+   "model": "modern_coffee_table_01.glb",
+   "size": {
+    "bn": "৩/১.৫ ফুট, উচ্চতা ১.৫ ফুট",
+    "en": "3/1.5 feet, height 1.5 feet"
+   },
+   "variants": [
+    {
+     "name": {
+      "bn": "কাঠের টপ",
+      "en": "Wood top"
+     },
+     "price": 14999
+    },
+    {
+     "name": {
+      "bn": "মার্বেল টপ",
+      "en": "Marble top"
+     },
+     "price": 29999
+    }
+   ],
+   "materials_note": null
   },
   {
    "id": "painted_wooden_chair_01",
@@ -147,14 +222,21 @@
     "en": "Chair",
     "bn": "চেয়ার"
    },
-   "price": null,
+   "price": 7999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠ, সাদা রঙ",
+    "en": "Wood, white paint"
+   },
    "colour": null,
-   "description": null,
-   "model": "painted_wooden_chair_01.glb"
+   "description": {
+    "bn": "সাদা রঙ করা কাঠের চেয়ার।",
+    "en": "White painted wooden chair."
+   },
+   "model": "painted_wooden_chair_01.glb",
+   "materials_note": null
   },
   {
    "id": "side_table_01",
@@ -169,14 +251,25 @@
     "en": "Table",
     "bn": "টেবিল"
    },
-   "price": null,
+   "price": 5999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠ",
+    "en": "Wood"
+   },
    "colour": null,
-   "description": null,
-   "model": "side_table_01.glb"
+   "description": {
+    "bn": "দুই তাকের কাঠের সাইড টেবিল।",
+    "en": "Wooden side table with two shelves."
+   },
+   "model": "side_table_01.glb",
+   "size": {
+    "bn": "২.৫/১.৫ ফুট",
+    "en": "2.5/1.5 feet"
+   },
+   "materials_note": null
   },
   {
    "id": "sofa_03",
@@ -191,14 +284,25 @@
     "en": "Sofa",
     "bn": "সোফা"
    },
-   "price": null,
+   "price": 49999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠের ফ্রেম, কাপড়ের গদি",
+    "en": "Wood frame, fabric cushions"
+   },
    "colour": null,
-   "description": null,
-   "model": "sofa_03.glb"
+   "description": {
+    "bn": "কাঠের ফ্রেমে গদিযুক্ত ক্ল্যাসিক সোফা।",
+    "en": "Classic cushioned sofa on a carved wooden frame."
+   },
+   "model": "sofa_03.glb",
+   "size": {
+    "bn": "৫/২ ফুট",
+    "en": "5/2 feet"
+   },
+   "materials_note": null
   },
   {
    "id": "standing_picture_frame_02",
@@ -220,7 +324,8 @@
    "materials": null,
    "colour": null,
    "description": null,
-   "model": null
+   "model": null,
+   "materials_note": null
   },
   {
    "id": "steel_frame_shelves_01",
@@ -235,14 +340,25 @@
     "en": "Shelving",
     "bn": "তাক"
    },
-   "price": null,
+   "price": 14999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "ধাতব ফ্রেম ও কাঠের তাক",
+    "en": "Metal frame and wooden shelves"
+   },
    "colour": null,
-   "description": null,
-   "model": "steel_frame_shelves_01.glb"
+   "description": {
+    "bn": "ধাতব ফ্রেমে কাঠের তাকের শেলফ।",
+    "en": "Shelving unit with wooden shelves on a metal frame."
+   },
+   "model": "steel_frame_shelves_01.glb",
+   "size": {
+    "bn": "৬/৩ ফুট",
+    "en": "6/3 feet"
+   },
+   "materials_note": null
   },
   {
    "id": "vintage_wooden_drawer_01",
@@ -257,14 +373,25 @@
     "en": "Cabinet",
     "bn": "কেবিনেট"
    },
-   "price": null,
+   "price": 29999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠ, ধাতব হ্যান্ডেল",
+    "en": "Wood, metal handles"
+   },
    "colour": null,
-   "description": null,
-   "model": "vintage_wooden_drawer_01.glb"
+   "description": {
+    "bn": "ধাতব হ্যান্ডেলযুক্ত ছয় ড্রয়ারের কাঠের ক্যাবিনেট।",
+    "en": "Six-drawer wooden cabinet with metal handles."
+   },
+   "model": "vintage_wooden_drawer_01.glb",
+   "size": {
+    "bn": "২/৪/২.৫ ফুট",
+    "en": "2/4/2.5 feet"
+   },
+   "materials_note": null
   },
   {
    "id": "wooden_display_shelves_01",
@@ -279,14 +406,25 @@
     "en": "Shelving",
     "bn": "তাক"
    },
-   "price": null,
+   "price": 34999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠ",
+    "en": "Wood"
+   },
    "colour": null,
-   "description": null,
-   "model": "wooden_display_shelves_01.glb"
+   "description": {
+    "bn": "খোপ খোপ খোলা তাক ও সাদা দরজার কাঠের শেলফ।",
+    "en": "Wooden shelf with open cubbies and white cabinet doors."
+   },
+   "model": "wooden_display_shelves_01.glb",
+   "size": {
+    "bn": "৪/৬ ফুট/১৪ ইঞ্চি",
+    "en": "4/6 feet/14 inch"
+   },
+   "materials_note": null
   },
   {
    "id": "wooden_table_02",
@@ -301,14 +439,25 @@
     "en": "Table",
     "bn": "টেবিল"
    },
-   "price": null,
+   "price": 9999,
    "makingDays": null,
    "deliveryDays": null,
    "dimensions": null,
-   "materials": null,
+   "materials": {
+    "bn": "কাঠ",
+    "en": "Wood"
+   },
    "colour": null,
-   "description": null,
-   "model": "wooden_table_02.glb"
+   "description": {
+    "bn": "কাঠের টেবিল।",
+    "en": "Wooden table."
+   },
+   "model": "wooden_table_02.glb",
+   "size": {
+    "bn": "৪/১.৫/২.৫ ফুট",
+    "en": "4/1.5/2.5 feet"
+   },
+   "materials_note": null
   }
  ]
 }
