@@ -176,7 +176,7 @@ fetch('address.json').then(r=>r.json()).then(a=>{ADDR=a;renderAddr()}).catch(()=
 /* ---------- login (Supabase) ---------- */
 const CFG=window.AUREVO_CONFIG||{};const authOn=()=>!!(CFG.SUPABASE_URL&&CFG.SUPABASE_ANON_KEY);
 let sb=null,USER=null,libP=null;
-function loadSB(){return libP||(libP=new Promise((ok,no)=>{if(window.supabase)return ok();const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js';s.onload=ok;s.onerror=no;document.head.appendChild(s)}))}
+function loadSB(){return libP||(libP=(async()=>{if(window.supabase)return;try{const m=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.0/+esm');window.supabase={createClient:m.createClient}}catch(x){await new Promise((ok,no)=>{const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.0/dist/umd/supabase.js';s.onload=ok;s.onerror=no;document.head.appendChild(s)})}})())}
 const authMsg=m=>{$('#authMsg').textContent=m||''};
 function renderAcct(){const b=$('#acct');if(!authOn()){b.hidden=true;return}b.hidden=false;b.textContent='';if(USER){const m=USER.user_metadata||{},u=m.avatar_url||m.picture;if(u){const i=document.createElement('img');i.src=u;i.alt='';i.referrerPolicy='no-referrer';i.style.cssText='width:22px;height:22px;border-radius:50%;display:block';b.appendChild(i)}else b.textContent=((m.full_name||m.name||USER.email||'?')[0]||'?').toUpperCase()}else b.textContent='👤'}
 function openLogin(){authMsg('');$('#login').showModal()}
