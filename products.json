@@ -49,13 +49,13 @@
    "deliveryDays": null,
    "dimensions": null,
    "materials": {
-    "bn": "কাঠ ও ধাতব ফ্রেম",
-    "en": "Wood and metal frame"
+    "bn": "কাঠ, ধাতব রঙের ফিনিশের ফ্রেম",
+    "en": "Wood with a metallic-finish frame"
    },
    "colour": null,
    "description": {
-    "bn": "ধাতব ফ্রেমে কাঠের ড্রয়ার ও খোলা তাকযুক্ত স্টোরেজ ইউনিট।",
-    "en": "Storage unit with wooden drawers and open shelves on a metal frame."
+    "bn": "ধাতব রঙের ফিনিশের ফ্রেমে কাঠের ড্রয়ার ও খোলা তাকযুক্ত স্টোরেজ ইউনিট।",
+    "en": "Storage unit with wooden drawers and open shelves on a metallic-finish frame."
    },
    "model": "drawer_cabinet.glb",
    "size": {
@@ -70,8 +70,8 @@
    "division": "ORIGINALS",
    "condition": "new",
    "name": {
-    "en": "Metal Office Desk",
-    "bn": "মেটাল অফিস ডেস্ক"
+    "en": "Office Desk",
+    "bn": "অফিস ডেস্ক"
    },
    "type": {
     "en": "Table",
@@ -82,13 +82,13 @@
    "deliveryDays": null,
    "dimensions": null,
    "materials": {
-    "bn": "ধাতব পা, সাদা ডেস্ক",
-    "en": "White desk on metal legs"
+    "bn": "কাঠ, ধাতব রঙের ফিনিশ",
+    "en": "Wood with a metallic-finish colour"
    },
    "colour": null,
    "description": {
-    "bn": "ধাতব পায়ায় সাদা অফিস ডেস্ক, দুই পাশে ড্রয়ার।",
-    "en": "White office desk on metal legs with drawers on both sides."
+    "bn": "ধাতব রঙের ফিনিশে সাদা অফিস ডেস্ক, দুই পাশে ড্রয়ার।",
+    "en": "White office desk with a metallic-finish base and drawers on both sides."
    },
    "model": "metal_office_desk.glb",
    "size": {
@@ -149,13 +149,13 @@
    "deliveryDays": null,
    "dimensions": null,
    "materials": {
-    "bn": "কাঠের কাঠামো, গদি, ধাতব বেস",
-    "en": "Wood shell, cushioning, metal base"
+    "bn": "কাঠের কাঠামো, গদি, ধাতব রঙের ফিনিশের বেস",
+    "en": "Wood shell, cushioning, metallic-finish base"
    },
    "colour": null,
    "description": {
-    "bn": "ঘূর্ণায়মান ধাতব বেসের উপর আরামদায়ক লাউঞ্জ চেয়ার।",
-    "en": "Comfortable lounge chair on a swivel metal base."
+    "bn": "ঘূর্ণায়মান বেসের উপর আরামদায়ক লাউঞ্জ চেয়ার।",
+    "en": "Comfortable lounge chair on a swivel base."
    },
    "model": "mid_century_lounge_chair.glb",
    "materials_note": null
@@ -295,7 +295,7 @@
    "colour": null,
    "description": {
     "bn": "কাঠের ফ্রেমে গদিযুক্ত ক্ল্যাসিক সোফা।",
-    "en": "Classic cushioned sofa on a carved wooden frame."
+    "en": "Classic cushioned sofa on a wooden frame."
    },
    "model": "sofa_03.glb",
    "size": {
@@ -333,8 +333,8 @@
    "division": "ORIGINALS",
    "condition": "new",
    "name": {
-    "en": "Steel Frame Shelves",
-    "bn": "স্টিল ফ্রেম তাক"
+    "en": "Frame Shelves",
+    "bn": "ফ্রেম তাক"
    },
    "type": {
     "en": "Shelving",
@@ -345,13 +345,13 @@
    "deliveryDays": null,
    "dimensions": null,
    "materials": {
-    "bn": "ধাতব ফ্রেম ও কাঠের তাক",
-    "en": "Metal frame and wooden shelves"
+    "bn": "কাঠের তাক, ধাতব রঙের ফিনিশের ফ্রেম",
+    "en": "Wooden shelves on a metallic-finish frame"
    },
    "colour": null,
    "description": {
-    "bn": "ধাতব ফ্রেমে কাঠের তাকের শেলফ।",
-    "en": "Shelving unit with wooden shelves on a metal frame."
+    "bn": "ধাতব রঙের ফিনিশের ফ্রেমে কাঠের তাকের শেলফ।",
+    "en": "Shelving unit with wooden shelves on a metallic-finish frame."
    },
    "model": "steel_frame_shelves_01.glb",
    "size": {
