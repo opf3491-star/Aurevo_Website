@@ -309,7 +309,7 @@ dialog#wn{margin:auto;width:min(420px,calc(100% - 24px))}
 <dialog id="wn"><div class="wb"><div class="eb" data-i="wEye"></div><h3 data-i="wT"></h3>
 <div class="wi"><svg class="ic"><use href="#i-shield"/></svg><div><b data-i="w1t"></b><span data-i="w1d"></span></div></div>
 <div class="wi"><svg class="ic"><use href="#i-coin"/></svg><div><b data-i="w2t"></b><span data-i="w2d"></span></div></div>
-<div class="acts"><a class="btn p" id="wGo" target="_blank" rel="noopener noreferrer"><span data-i="wGo"></span></a><button class="btn" id="wNo" data-i="wNo"></button></div></div></dialog>
+<div class="acts"><a class="btn p" id="wGo"><span data-i="wGo"></span></a><button class="btn" id="wNo" data-i="wNo"></button></div></div></dialog>
 
 <dialog id="pp" aria-label="Product"><div class="ppw" id="ppw"><div class="ppg"><div class="fw"><div class="frame" id="frame"><button class="fa bk" id="ppBack" aria-label="Back"><svg class="ic"><use href="#i-back"/></svg></button></div></div><div class="dt" id="dt"></div></div>
 <section class="sec" id="rvS"></section><section class="sec" id="smS"></section></div></dialog>
@@ -450,8 +450,8 @@ else{f.innerHTML=`<button class="btn" id="rvLg">${esc(t('revLogin'))}</button>`;
 /* ---------- order flow ---------- */
 let pend=null;
 async function orderFlow(p,i){if(authOn()){try{await initP}catch(e){}if(!USER){pend={id:p.id,vi:i};sset('aurevo-pend',JSON.stringify(pend));openLogin();return}}showWarn(p,i)}
-function showWarn(p,i){const v=p.variants?p.variants[i]:p,pr=v.price;const m=`AUREVO — ${p.name[L]}${p.variants?' ('+v.name[L]+')':''}${pr?' · '+fmt(pr):''}\n${t('ord')}\n${location.origin+location.pathname}#p=${p.id}`;$('#wGo').href=waUrl(m);$('#wn').showModal()}
-$('#wNo').onclick=()=>$('#wn').close();$('#wGo').addEventListener('click',()=>setTimeout(()=>$('#wn').close(),300));$('#wn').addEventListener('click',e=>{if(e.target.id==='wn')e.target.close()});
+function showWarn(p,i){const v=p.variants?p.variants[i]:p,pr=v.price;$('#wGo').href='order.html?p='+encodeURIComponent(p.id)+'&v='+i;$('#wn').showModal()}
+$('#wNo').onclick=()=>$('#wn').close();$('#wn').addEventListener('click',e=>{if(e.target.id==='wn')e.target.close()});
 
 /* ---------- login (Supabase) ---------- */
 const CFG=window.AUREVO_CONFIG||{};const authOn=()=>!!(CFG.SUPABASE_URL&&CFG.SUPABASE_ANON_KEY);
@@ -463,8 +463,10 @@ function setOv(){const m=$('#lgc').dataset.mode||'in';$('#ovT').textContent=t('o
 $('#ovB').onclick=()=>setMode($('#lgc').dataset.mode==='in'?'up':'in');$$('[data-sw]').forEach(b=>b.onclick=()=>setMode(b.dataset.sw));
 function renderAcct(){const a=$('#acct'),l=$('#lgn');if(!authOn()){a.hidden=l.hidden=true;return}a.hidden=!USER;l.hidden=!!USER;a.textContent='';if(USER){const m=USER.user_metadata||{},u=m.avatar_url||m.picture;if(u){const i=document.createElement('img');i.src=u;i.alt='';i.referrerPolicy='no-referrer';a.appendChild(i)}else a.textContent=((m.full_name||m.name||USER.email||'?')[0]||'?').toUpperCase()}}
 function openLogin(){authMsg('');setMode('in');$('#login').showModal()}
+function goNext(){const nx=sget('aurevo-next');if(nx&&/^order\.html\?p=[\w-]+(&v=\d+)?$/.test(nx)){sset('aurevo-next','');location.href=nx;return true}return false}
 async function initAuth(){renderAcct();if(!authOn())return;try{await loadSB();sb=window.supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON_KEY);const r=await sb.auth.getSession();USER=r.data.session?r.data.session.user:null;renderAcct();
-sb.auth.onAuthStateChange((ev,s)=>{USER=s?s.user:null;renderAcct();if(USER&&$('#login').open){$('#login').close();if(pend){const p=D&&D.products.find(x=>x.id===pend.id);const k=pend.vi;pend=null;sset('aurevo-pend','');if(p)showWarn(p,k)}}if(cur)buildRv(cur)})}catch(e){console.error(e)}}
+if(USER&&goNext())return;if(!USER&&location.hash==='#login')openLogin();
+sb.auth.onAuthStateChange((ev,s)=>{USER=s?s.user:null;renderAcct();if(USER&&goNext())return;if(USER&&$('#login').open){$('#login').close();if(pend){const p=D&&D.products.find(x=>x.id===pend.id);const k=pend.vi;pend=null;sset('aurevo-pend','');if(p)showWarn(p,k)}}if(cur)buildRv(cur)})}catch(e){console.error(e)}}
 const acctClick=()=>{if(USER){$('#acctWho').textContent=((USER.user_metadata||{}).full_name||'')+' '+(USER.email||'');$('#acctMsg').textContent='';$('#acctDlg').showModal()}else openLogin()};
 $('#acct').onclick=acctClick;$('#lgn').onclick=openLogin;$('#bnA').addEventListener('click',e=>{e.preventDefault();if(!authOn())return;acctClick()});
 $('#lgClose').onclick=()=>$('#login').close();$('#acClose').onclick=()=>$('#acctDlg').close();

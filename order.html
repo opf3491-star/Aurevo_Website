@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="bn" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>অর্ডার — AUREVO</title>
+<meta name="theme-color" content="#0D1B2A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&family=Noto+Serif+Bengali:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#0D1B2A;--card:#1B263B;--text:#F4F1DE;--mut:rgba(244,241,222,.66);--acc:#D4C4A8;--sage:#778D7A;--line:rgba(212,196,168,.18);--ln2:rgba(212,196,168,.4);--btn:#D4C4A8;--btnt:#0D1B2A;--err:#E8AEAE;--ok:#9DBBA0;--sh:0 14px 38px rgba(2,8,16,.45)}
+[data-theme=light]{color-scheme:light;--bg:#F4F1DE;--card:#FBF9EE;--text:#0D1B2A;--mut:rgba(13,27,42,.66);--acc:#6F5F42;--line:rgba(65,90,119,.2);--ln2:rgba(65,90,119,.42);--btn:#0D1B2A;--btnt:#F4F1DE;--err:#9A4545;--ok:#3E6B47;--sh:0 14px 34px rgba(13,27,42,.14)}
+[lang=bn]{--fh:"Noto Serif Bengali","Cormorant Garamond",serif;--fb:"Hind Siliguri","Jost",sans-serif}
+[lang=en]{--fh:"Cormorant Garamond","Noto Serif Bengali",serif;--fb:"Jost","Hind Siliguri",sans-serif}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--text);font:400 15px/1.65 var(--fb);overflow-x:hidden}
+h1,h2,h3{font-family:var(--fh);font-weight:500;margin:0}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top)}
+.hb{max-width:760px;margin:auto;padding:0 12px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:60px}
+.ib{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:none;border:0}.ib:hover{background:var(--line)}
+.wm{font:300 15px "Jost",sans-serif;letter-spacing:.44em;text-transform:uppercase;margin-right:-.44em;display:flex;align-items:center;gap:10px}.wm svg{height:28px;width:11px;color:var(--acc)}
+.tl{justify-self:end;display:flex;gap:4px}.tg{border:1px solid var(--ln2);background:none;border-radius:99px;padding:6px 10px;font-size:12px}@media(max-width:420px){.wm{letter-spacing:.28em;margin-right:-.28em;font-size:13px}.hb{padding:0 8px}}
+main{max-width:760px;margin:auto;padding:22px 16px calc(40px + env(safe-area-inset-bottom))}
+.eb{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--acc);font-weight:500}
+h1{font-size:clamp(30px,5vw,42px);line-height:1.25;margin:8px 0 6px}.lead{color:var(--mut);margin:0 0 22px;font-size:14px}
+.cd{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;margin-bottom:16px;position:relative}
+.cd h2{font-size:22px;margin-bottom:4px;display:flex;align-items:center;gap:12px}.cd h2 i{font:500 13px var(--fb);font-style:normal;width:28px;height:28px;border:1px solid var(--ln2);border-radius:50%;display:grid;place-items:center;color:var(--acc)}
+.cd .hint{margin:0 0 14px;font-size:13px;color:var(--mut)}
+label{display:block;font-size:12.5px;color:var(--mut);margin:12px 0 5px}label b{color:var(--err);font-weight:500}
+input,select,textarea{width:100%;background:none;border:1px solid var(--ln2);border-radius:14px;padding:12px 14px;font-size:16px;min-width:0}
+select option{background:var(--bg)}textarea{resize:vertical;min-height:70px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}@media(max-width:560px){.g2{grid-template-columns:1fr}}
+.pr{display:flex;gap:14px;align-items:center}.pr img{width:84px;height:84px;border-radius:18px;object-fit:cover;border:1px solid var(--line);background:var(--card)}.pr h3{font-size:20px}.pr .p{font:500 18px var(--fh);color:var(--acc)}
+.qt{display:inline-flex;align-items:center;border:1px solid var(--ln2);border-radius:99px;overflow:hidden}.qt button{width:42px;height:42px;background:none;border:0;font-size:20px}.qt span{min-width:34px;text-align:center}
+.sum{border-top:1px solid var(--line);margin-top:16px;padding-top:12px;font-size:14px}.sum div{display:flex;justify-content:space-between;padding:3px 0}.sum .t{font:500 20px var(--fh);color:var(--acc)}
+.up{display:flex;align-items:center;gap:14px;border:1px dashed var(--ln2);border-radius:18px;padding:14px;cursor:pointer;position:relative}.up input{position:absolute;inset:0;opacity:0;cursor:pointer;font-size:0}
+.up .th{width:62px;height:62px;border-radius:12px;background:var(--bg);display:grid;place-items:center;color:var(--acc);overflow:hidden;flex:none}.up .th img{width:100%;height:100%;object-fit:cover}.up b{display:block;font-weight:500;font-size:14px}.up span{font-size:12px;color:var(--mut)}
+.lock{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--mut);margin-top:12px}.lock .ic{width:18px;height:18px;color:var(--sage);margin-top:3px}
+.bk{background:linear-gradient(135deg,rgba(119,141,122,.16),transparent);border:1px solid var(--ln2);border-radius:18px;padding:16px;margin-bottom:6px}
+.bk .am{font:500 30px var(--fh);color:var(--acc);line-height:1.2}.bk .nm{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:18px;letter-spacing:.04em}
+.cp{border:1px solid var(--ln2);background:none;border-radius:99px;padding:6px 14px;font-size:12px}.bk ol{margin:12px 0 0;padding-left:20px;font-size:13px;color:var(--mut)}
+.ck{display:flex;gap:12px;align-items:flex-start;font-size:13.5px;color:var(--mut)}.ck input{width:20px;height:20px;margin-top:3px;flex:none;accent-color:var(--acc)}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:16px;border-radius:99px;border:1px solid var(--btn);background:var(--btn);color:var(--btnt);font-size:13px;letter-spacing:.1em;text-transform:uppercase}.btn:disabled{opacity:.55;cursor:wait}
+.btn.o{background:none;color:var(--text);border-color:var(--ln2)}
+.er{color:var(--err);font-size:13.5px;margin:12px 0 0;min-height:20px}
+.wb{background:rgba(190,96,96,.1);border:1px solid rgba(214,132,132,.34);border-radius:18px;padding:14px 16px;font-size:13px;color:var(--mut);margin-bottom:16px}.wb b{color:var(--err);font-weight:500}
+.ok{text-align:center;padding:30px 22px}.ok .ic{width:46px;height:46px;color:var(--ok);margin-bottom:10px;stroke-width:1.25}.ok .cod{font:500 36px var(--fh);color:var(--acc);margin:6px 0}.ok p{color:var(--mut);margin:6px 0 18px}
+.mo{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:13.5px}.mo b{font-weight:500}.mo span{color:var(--mut);font-size:12.5px}.st{font-size:12px;border:1px solid var(--ln2);border-radius:99px;padding:3px 12px;align-self:center;white-space:nowrap}
+.need{text-align:center;padding:40px 10px}.need p{color:var(--mut)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="star" viewBox="0 0 40 100"><path fill="currentColor" d="M20 0C21 30 26 44 40 50C26 56 21 70 20 100C19 70 14 56 0 50C14 44 19 30 20 0Z"/><path fill="#000" opacity=".26" d="M20 0C21 30 26 44 40 50C26 56 21 70 20 100Z"/></symbol>
+<symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-cam" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+<symbol id="i-id" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.5-1.5 1.700-2 3-2s2.500.5 3 2M14 10h4M14 13h3"/></symbol>
+<symbol id="i-done" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.500h8M8 12.500h5"/></symbol>
+</defs></svg>
+<header><div class="hb"><a class="ib" id="bk" href="index.html" aria-label="Back"><svg class="ic"><use href="#i-back"/></svg></a><span class="wm"><svg viewBox="0 0 40 100" aria-hidden="true"><use href="#star"/></svg>Λurevo</span><div class="tl"><button class="tg" id="lang">EN</button><button class="tg" id="theme" aria-label="Theme"><svg class="ic" style="width:16px;height:16px;display:block" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button></div></div></header>
+<main id="main"><p class="sub" style="color:var(--mut)">…</p></main>
+<script src="config.js"></script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sget=k=>{try{return localStorage.getItem(k)}catch(e){return null}},sset=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+const ic=n=>`<svg class="ic" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const DIST=[['Bagerhat','বাগেরহাট'],['Bandarban','বান্দরবান'],['Barguna','বরগুনা'],['Barishal','বরিশাল'],['Bhola','ভোলা'],['Bogura','বগুড়া'],['Brahmanbaria','ব্রাহ্মণবাড়িয়া'],['Chandpur','চাঁদপুর'],['Chapai Nawabganj','চাঁপাইনবাবগঞ্জ'],['Chattogram','চট্টগ্রাম'],['Chuadanga','চুয়াডাঙ্গা'],['Cumilla','কুমিল্লা'],["Cox's Bazar",'কক্সবাজার'],['Dhaka','ঢাকা'],['Dinajpur','দিনাজপুর'],['Faridpur','ফরিদপুর'],['Feni','ফেনী'],['Gaibandha','গাইবান্ধা'],['Gazipur','গাজীপুর'],['Gopalganj','গোপালগঞ্জ'],['Habiganj','হবিগঞ্জ'],['Jamalpur','জামালপুর'],['Jashore','যশোর'],['Jhalokati','ঝালকাঠি'],['Jhenaidah','ঝিনাইদহ'],['Joypurhat','জয়পুরহাট'],['Khagrachhari','খাগড়াছড়ি'],['Khulna','খুলনা'],['Kishoreganj','কিশোরগঞ্জ'],['Kurigram','কুড়িগ্রাম'],['Kushtia','কুষ্টিয়া'],['Lakshmipur','লক্ষ্মীপুর'],['Lalmonirhat','লালমনিরহাট'],['Madaripur','মাদারীপুর'],['Magura','মাগুরা'],['Manikganj','মানিকগঞ্জ'],['Meherpur','মেহেরপুর'],['Moulvibazar','মৌলভীবাজার'],['Munshiganj','মুন্সিগঞ্জ'],['Mymensingh','ময়মনসিংহ'],['Naogaon','নওগাঁ'],['Narail','নড়াইল'],['Narayanganj','নারায়ণগঞ্জ'],['Narsingdi','নরসিংদী'],['Natore','নাটোর'],['Netrokona','নেত্রকোনা'],['Nilphamari','নীলফামারী'],['Noakhali','নোয়াখালী'],['Pabna','পাবনা'],['Panchagarh','পঞ্চগড়'],['Patuakhali','পটুয়াখালী'],['Pirojpur','পিরোজপুর'],['Rajbari','রাজবাড়ী'],['Rajshahi','রাজশাহী'],['Rangamati','রাঙামাটি'],['Rangpur','রংপুর'],['Satkhira','সাতক্ষীরা'],['Shariatpur','শরীয়তপুর'],['Sherpur','শেরপুর'],['Sirajganj','সিরাজগঞ্জ'],['Sunamganj','সুনামগঞ্জ'],['Sylhet','সিলেট'],['Tangail','টাঙ্গাইল'],['Thakurgaon','ঠাকুরগাঁও']];
+const T={bn:{
+back:'ফিরে যান',eb:'অর্ডার ও অগ্রিম',h1:'অর্ডার নিশ্চিত করুন',lead:'ফর্ম জমা দিলেই অর্ডার নিশ্চিত হয় না। আমরা যাচাই করে WhatsApp-এ নিশ্চিত করলে তবেই অর্ডার নিশ্চিত।',
+c1:'আপনার পছন্দ',qty:'পরিমাণ',unit:'একক দাম',total:'মোট',adv:'১০% অগ্রিম',var:'বিকল্প',
+c2:'কাস্টমাইজ',c2h:'সাইজ, রঙ ও পালিশ আপনার মতো করে লিখুন। না লিখলে আমরা WhatsApp-এ জেনে নেব।',sz:'সাইজ',col:'রঙ',pol:'পালিশ / ফিনিশ',date:'কবে চাই',note:'অন্য কিছু বলার থাকলে',
+c3:'আপনার তথ্য',nm:'পুরো নাম',ph:'মোবাইল নম্বর',phH:'যেমন 01XXXXXXXXX',dist:'জেলা',pick:'বেছে নিন',area:'এলাকা / থানা',addr:'পুরো ঠিকানা',map:'ঠিকানার Google Maps লিংক',mapH:'Google Maps-এ নিজের বাসার লোকেশন খুলে "Share" থেকে লিংক কপি করে দিন',
+c4:'পরিচয় যাচাই',c4h:'আসবাবের দাম বেশি, তাই প্রতারণা ঠেকাতে আসল পরিচয় বাধ্যতামূলক।',selfie:'আপনার নিজের ছবি',selfieH:'মুখ স্পষ্ট দেখা যাবে এমন ছবি',idc:'পরিচয়পত্রের ছবি',idH:'NID বা অন্য সরকারি পরিচয়পত্র',tap:'ছবি তুলুন বা বেছে নিন',lockT:'ছবিগুলো ব্যক্তিগত ভান্ডারে থাকে, শুধু AUREVO দেখতে পায়। অর্ডার সম্পন্ন হওয়ার পর মুছে ফেলা হয়।',
+c5:'১০% অগ্রিম — bKash',c5h:'নিচের নম্বরে bKash করে টাকা পাঠান, তারপর TrxID লিখুন।',bnum:'bKash নম্বর',copy:'কপি',copied:'কপি হয়েছে',s1:'bKash অ্যাপে "Send Money" চাপুন।',s2:'উপরের নম্বরে হুবহু অগ্রিমের টাকা পাঠান।',s3:'মেসেজে আসা TrxID ও আপনার bKash নম্বর নিচে লিখুন।',sndr:'যে bKash নম্বর থেকে পাঠিয়েছেন',trx:'TrxID',
+agree:'আমি বুঝেছি: ফর্ম জমা মানেই অর্ডার নিশ্চিত নয়। যাচাই শেষে AUREVO WhatsApp-এ নিশ্চিত করলে তবেই অর্ডার নিশ্চিত।',submit:'অর্ডার জমা দিন',sending:'জমা হচ্ছে…',
+need:'অর্ডার করতে লগইন লাগবে',needB:'লগইন করুন',noProd:'পণ্যটি পাওয়া যায়নি।',home:'হোমে ফিরুন',
+e_req:'সব * ঘর পূরণ করুন।',e_ph:'সঠিক মোবাইল নম্বর দিন (01XXXXXXXXX)।',e_map:'একটি সঠিক Google Maps লিংক দিন (https://…)।',e_addr:'পুরো ঠিকানা আরও বিস্তারিত লিখুন।',e_img:'দুটি ছবিই দিতে হবে।',e_trx:'TrxID সঠিক নয় (৮–১২ অক্ষর/সংখ্যা)।',e_snd:'bKash নম্বরটি সঠিক নয়।',e_agree:'নিশ্চিতকরণের ঘরে টিক দিন।',e_dup:'এই TrxID আগেই ব্যবহার হয়েছে। সঠিকটি লিখুন।',e_img2:'ছবি পড়া যায়নি। অন্য একটি JPG/PNG ছবি দিন।',e_up:'ছবি আপলোড হয়নি। আবার চেষ্টা করুন।',e_gen:'জমা দেওয়া যায়নি। আবার চেষ্টা করুন বা WhatsApp-এ জানান।',e_sys:'অর্ডার সিস্টেম এখনও চালু হয়নি। আপাতত WhatsApp-এ অর্ডার করুন।',
+okT:'অর্ডার জমা হয়েছে',okP:'আমরা আপনার পরিচয় ও bKash পেমেন্ট যাচাই করব, তারপর WhatsApp-এ নিশ্চিত করব। আপনার অর্ডার নম্বর:',okW:'WhatsApp-এ জানান',okH:'হোমে ফিরুন',
+mine:'আমার অর্ডার',none:'এখনও কোনো অর্ডার নেই।',
+s_submitted:'যাচাই চলছে',s_confirmed:'নিশ্চিত',s_wood:'কাঠ বাছাই',s_making:'তৈরি হচ্ছে',s_polish:'পালিশ',s_ready:'তৈরি শেষ',s_cancelled:'বাতিল',
+wa:'আমি অর্ডার ফর্ম জমা দিয়েছি।',days:'দিন'},
+en:{
+back:'Back',eb:'Order & advance',h1:'Confirm your order',lead:'Submitting this form does not confirm an order. It is confirmed only when we verify and confirm on WhatsApp.',
+c1:'Your choice',qty:'Quantity',unit:'Unit price',total:'Total',adv:'10% advance',var:'Option',
+c2:'Customise',c2h:'Tell us the size, colour and polish you want. Leave blank and we will ask on WhatsApp.',sz:'Size',col:'Colour',pol:'Polish / finish',date:'Needed by',note:'Anything else',
+c3:'Your details',nm:'Full name',ph:'Mobile number',phH:'e.g. 01XXXXXXXXX',dist:'District',pick:'Select',area:'Area / Thana',addr:'Full address',map:'Google Maps link of your address',mapH:'Open your location in Google Maps, tap Share and paste the link',
+c4:'Identity verification',c4h:'These pieces are high-value, so a genuine identity is mandatory to prevent fraud.',selfie:'Your own photo',selfieH:'A clear photo of your face',idc:'ID document photo',idH:'NID or another government ID',tap:'Take or choose a photo',lockT:'Photos are kept in private storage that only AUREVO can see, and are deleted once the order is completed.',
+c5:'10% advance — bKash',c5h:'Send the amount to the number below via bKash, then enter the TrxID.',bnum:'bKash number',copy:'Copy',copied:'Copied',s1:'Open bKash and tap "Send Money".',s2:'Send exactly the advance amount to the number above.',s3:'Enter the TrxID from the message and your bKash number below.',sndr:'bKash number you sent from',trx:'TrxID',
+agree:'I understand: submitting this form does not confirm the order. It is confirmed only when AUREVO confirms on WhatsApp after verification.',submit:'Submit order',sending:'Submitting…',
+need:'Please log in to place an order',needB:'Log in',noProd:'Product not found.',home:'Back to home',
+e_req:'Please fill in all * fields.',e_ph:'Enter a valid mobile number (01XXXXXXXXX).',e_map:'Enter a valid Google Maps link (https://…).',e_addr:'Please write a more detailed address.',e_img:'Both photos are required.',e_trx:'TrxID looks wrong (8–12 letters/digits).',e_snd:'The bKash number looks wrong.',e_agree:'Please tick the confirmation box.',e_dup:'This TrxID has already been used. Enter the correct one.',e_img2:'Could not read the photo. Try another JPG/PNG.',e_up:'Photo upload failed. Please try again.',e_gen:'Could not submit. Try again or tell us on WhatsApp.',e_sys:'The order system is not live yet. Please order on WhatsApp for now.',
+okT:'Order submitted',okP:'We will verify your identity and bKash payment, then confirm on WhatsApp. Your order number:',okW:'Tell us on WhatsApp',okH:'Back to home',
+mine:'My orders',none:'No orders yet.',
+s_submitted:'Under review',s_confirmed:'Confirmed',s_wood:'Selecting wood',s_making:'Being made',s_polish:'Polishing',s_ready:'Ready',s_cancelled:'Cancelled',
+wa:'I have submitted the order form.',days:'days'}};
+let L=sget('aurevo-lang')||'bn',D=null,P=null,V=0,Q=1,USER=null,sb=null,FILES={};
+const t=k=>T[L][k]||k,CFG=window.AUREVO_CONFIG||{},authOn=()=>!!(CFG.SUPABASE_URL&&CFG.SUPABASE_ANON_KEY);
+const fmt=n=>'৳'+new Intl.NumberFormat(L==='bn'?'bn-BD':'en-US').format(n);
+const qs=new URLSearchParams(location.search);
+function applyTheme(m){document.documentElement.dataset.theme=m;sset('aurevo-theme',m);$('meta[name=theme-color]').content=m==='dark'?'#0D1B2A':'#F4F1DE'}
+$('#theme').onclick=()=>applyTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+$('#lang').onclick=()=>{keep();L=L==='bn'?'en':'bn';sset('aurevo-lang',L);draw()};
+let KEEP={};function keep(){$$('#main [data-k]').forEach(e=>{if(e.type!=='file')KEEP[e.dataset.k]=e.type==='checkbox'?e.checked:e.value})}
+function restore(){$$('#main [data-k]').forEach(e=>{const v=KEEP[e.dataset.k];if(v!=null&&e.type!=='file'){if(e.type==='checkbox')e.checked=v;else e.value=v}})}
+const unitPrice=()=>P.variants?P.variants[V].price:P.price;
+const totalP=()=>unitPrice()*Q,advP=()=>Math.ceil(totalP()*.1);
+function draw(){document.documentElement.lang=L;$('#lang').textContent=L==='bn'?'EN':'বাং';$('#bk').setAttribute('aria-label',t('back'));
+const m=$('#main');if(!D){return}
+if(!P){m.innerHTML=`<div class="need"><p>${esc(t('noProd'))}</p><a class="btn o" href="index.html">${esc(t('home'))}</a></div>`;return}
+if(authOn()&&!USER){m.innerHTML=`<div class="need"><h1>${esc(t('need'))}</h1><p style="margin:14px 0 22px"></p><button class="btn" id="goLg">${esc(t('needB'))}</button></div>`;$('#goLg').onclick=goLogin;return}
+const u=unitPrice(),bn=D.bkash||'';const bnShow=bn.replace(/^880/,'0');
+m.innerHTML=`<div class="eb">${esc(t('eb'))}</div><h1>${esc(t('h1'))}</h1><p class="lead">${esc(t('lead'))}</p>
+<div class="wb"><b>•</b> ${esc(L==='bn'?'কিনতে আসল পরিচয় দিতে হবে, আর বেশি দামের আসবাবে ১০% আগে bKash-এ পেমেন্ট করতে হয়।':'A genuine identity is required to purchase, and higher-value pieces need a 10% advance via bKash.')}</div>
+<form id="f" novalidate>
+<div class="cd"><h2><i>1</i>${esc(t('c1'))}</h2><div class="pr" style="margin-top:12px"><img src="${esc(P.id)}.jpg" alt="" onerror="this.style.visibility='hidden'"><div><h3>${esc(P.name[L])}</h3><div class="p">${fmt(u)}</div></div></div>
+${P.variants?`<label>${esc(t('var'))}</label><select data-k="var" id="vr">${P.variants.map((x,k)=>`<option value="${k}" ${k===V?'selected':''}>${esc(x.name[L])} — ${fmt(x.price)}</option>`).join('')}</select>`:''}
+<label>${esc(t('qty'))}</label><div class="qt"><button type="button" id="qm" aria-label="-">−</button><span id="qv">${Q}</span><button type="button" id="qp" aria-label="+">+</button></div>
+<div class="sum"><div><span>${esc(t('unit'))}</span><span>${fmt(u)}</span></div><div><span>${esc(t('total'))}</span><span id="tt">${fmt(totalP())}</span></div><div class="t"><span>${esc(t('adv'))}</span><span id="ad">${fmt(advP())}</span></div></div></div>
+<div class="cd"><h2><i>2</i>${esc(t('c2'))}</h2><p class="hint">${esc(t('c2h'))}</p>
+<div class="g2"><div><label>${esc(t('sz'))}</label><input data-k="sz" maxlength="120"></div><div><label>${esc(t('col'))}</label><input data-k="col" maxlength="120"></div></div>
+<label>${esc(t('pol'))}</label><input data-k="pol" maxlength="120"><label>${esc(t('date'))}</label><input type="date" data-k="date" min="${new Date(Date.now()+864e5).toISOString().slice(0,10)}"><label>${esc(t('note'))}</label><textarea data-k="note" maxlength="500"></textarea></div>
+<div class="cd"><h2><i>3</i>${esc(t('c3'))}</h2>
+<label>${esc(t('nm'))} <b>*</b></label><input data-k="nm" autocomplete="name" maxlength="80"><label>${esc(t('ph'))} <b>*</b></label><input data-k="ph" type="tel" inputmode="numeric" autocomplete="tel" placeholder="${esc(t('phH'))}" maxlength="11">
+<div class="g2"><div><label>${esc(t('dist'))} <b>*</b></label><select data-k="dist"><option value="">${esc(t('pick'))}</option>${DIST.map(d=>`<option value="${esc(d[0])}">${esc(L==='bn'?d[1]:d[0])}</option>`).join('')}</select></div><div><label>${esc(t('area'))} <b>*</b></label><input data-k="area" maxlength="80"></div></div>
+<label>${esc(t('addr'))} <b>*</b></label><textarea data-k="addr" maxlength="300"></textarea><label>${esc(t('map'))} <b>*</b></label><input data-k="map" type="url" inputmode="url" placeholder="https://maps.app.goo.gl/…" maxlength="300"><p class="hint" style="margin:6px 0 0;font-size:12px">${esc(t('mapH'))}</p></div>
+<div class="cd"><h2><i>4</i>${esc(t('c4'))}</h2><p class="hint">${esc(t('c4h'))}</p>
+<label>${esc(t('selfie'))} <b>*</b></label><label class="up" style="margin:0"><input type="file" accept="image/*" capture="user" data-f="selfie"><span class="th" id="th_selfie">${ic('cam')}</span><span><b>${esc(t('tap'))}</b><span>${esc(t('selfieH'))}</span></span></label>
+<label>${esc(t('idc'))} <b>*</b></label><label class="up" style="margin:0"><input type="file" accept="image/*" data-f="id"><span class="th" id="th_id">${ic('id')}</span><span><b>${esc(t('tap'))}</b><span>${esc(t('idH'))}</span></span></label>
+<div class="lock">${ic('lock')}<span>${esc(t('lockT'))}</span></div></div>
+<div class="cd"><h2><i>5</i>${esc(t('c5'))}</h2><p class="hint">${esc(t('c5h'))}</p>
+<div class="bk"><div class="eb">${esc(t('adv'))}</div><div class="am" id="am">${fmt(advP())}</div><div class="nm"><span>${esc(t('bnum'))}: <b dir="ltr">${esc(bnShow)}</b></span><button type="button" class="cp" id="cpy">${esc(t('copy'))}</button></div><ol><li>${esc(t('s1'))}</li><li>${esc(t('s2'))}</li><li>${esc(t('s3'))}</li></ol></div>
+<label>${esc(t('sndr'))} <b>*</b></label><input data-k="snd" type="tel" inputmode="numeric" maxlength="11"><label>${esc(t('trx'))} <b>*</b></label><input data-k="trx" autocapitalize="characters" maxlength="12" style="text-transform:uppercase"></div>
+<div class="cd"><label class="ck" style="margin:0"><input type="checkbox" data-k="agree"><span>${esc(t('agree'))}</span></label><p class="er" id="er" role="alert"></p><button class="btn" id="sbm" type="submit">${esc(t('submit'))}</button></div></form>
+<div id="mineB"></div>`;
+restore();wire();setThumbs();mine()}
+function wire(){$('#qm').onclick=()=>{Q=Math.max(1,Q-1);upd()};$('#qp').onclick=()=>{Q=Math.min(20,Q+1);upd()};
+const vr=$('#vr');if(vr)vr.onchange=()=>{keep();V=+vr.value;draw()};
+$('#cpy').onclick=()=>{const n=(D.bkash||'').replace(/^880/,'0');(navigator.clipboard?navigator.clipboard.writeText(n):Promise.reject()).then(()=>{$('#cpy').textContent=t('copied')}).catch(()=>{prompt(t('bnum'),n)})};
+$$('[data-f]').forEach(i=>i.onchange=async()=>{const f=i.files[0];if(!f)return;try{FILES[i.dataset.f]=await shrink(f);setThumbs();$('#er').textContent=''}catch(e){delete FILES[i.dataset.f];i.value='';$('#er').textContent=t('e_img2')}});
+$('#f').onsubmit=submit}
+function upd(){$('#qv').textContent=Q;$('#tt').textContent=fmt(totalP());$('#ad').textContent=fmt(advP());$('#am').textContent=fmt(advP())}
+function setThumbs(){['selfie','id'].forEach(k=>{const e=$('#th_'+k);if(e&&FILES[k]){e.innerHTML='';const i=document.createElement('img');i.src=FILES[k].url;i.alt='';e.appendChild(i)}})}
+function shrink(f){return new Promise((ok,no)=>{const im=new Image(),u=URL.createObjectURL(f);im.onload=()=>{try{const s=Math.min(1,1280/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);c.getContext('2d').drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);c.toBlob(b=>b?ok({blob:b,url:URL.createObjectURL(b)}):no(),'image/jpeg',.82)}catch(e){no(e)}};im.onerror=()=>{URL.revokeObjectURL(u);no()};im.src=u})}
+const g=k=>(($('[data-k='+k+']')||{}).value||'').trim();
+async function submit(e){e.preventDefault();const er=$('#er'),set=m=>{er.textContent=m;er.scrollIntoView({block:'center',behavior:'smooth'})};
+const ph=g('ph'),snd=g('snd'),trx=g('trx').toUpperCase(),mp=g('map');
+if(!g('nm')||!ph||!g('dist')||!g('area')||!g('addr')||!mp||!snd||!trx)return set(t('e_req'));
+if(!/^01[3-9]\d{8}$/.test(ph))return set(t('e_ph'));if(g('addr').length<12)return set(t('e_addr'));
+if(!/^https:\/\/\S+$/i.test(mp))return set(t('e_map'));if(!FILES.selfie||!FILES.id)return set(t('e_img'));
+if(!/^01[3-9]\d{8}$/.test(snd))return set(t('e_snd'));if(!/^[A-Z0-9]{8,12}$/.test(trx))return set(t('e_trx'));if(!$('[data-k=agree]').checked)return set(t('e_agree'));
+if(!sb||!USER)return set(t('e_sys'));
+const b=$('#sbm');b.disabled=true;b.textContent=t('sending');er.textContent='';
+try{const rid=crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(16).slice(2),base=USER.id+'/'+rid;
+for(const k of ['selfie','id']){const r=await sb.storage.from('kyc').upload(base+'-'+k+'.jpg',FILES[k].blob,{contentType:'image/jpeg',upsert:false});if(r.error){console.error(r.error);throw {code:'up'}}}
+const v=P.variants?P.variants[V]:null,row={product_id:P.id,product_name:P.name.en,variant:v?v.name.en:null,unit_price:unitPrice(),qty:Q,total:totalP(),advance_due:advP(),customer_name:g('nm'),phone:ph,district:g('dist'),area:g('area'),address:g('addr'),map_link:mp,size_note:g('sz')||null,colour_note:g('col')||null,polish_note:g('pol')||null,wanted_date:g('date')||null,notes:g('note')||null,selfie_path:base+'-selfie.jpg',id_path:base+'-id.jpg',bkash_sender:snd,bkash_trx:trx};
+const r=await sb.from('orders').insert(row).select('order_no').single();
+if(r.error){console.error(r.error);throw r.error}
+done(r.data.order_no,v)}
+catch(x){b.disabled=false;b.textContent=t('submit');const m=(x&&x.message||'')+'';
+if(x&&x.code==='up')set(t('e_up'));else if(x&&(x.code==='23505'||/duplicate|unique/i.test(m)))set(t('e_dup'));else if(x&&(x.code==='42P01'||x.code==='PGRST205'||/relation|schema cache|does not exist|Bucket not found/i.test(m)))set(t('e_sys'));else set(t('e_gen'))}}
+function done(no,v){const code='AV-'+no,num=(D.whatsapp||'').replace(/\D/g,''),msg=`AUREVO ${code} — ${P.name[L]}${v?' ('+v.name[L]+')':''} × ${Q}\n${t('wa')}`;
+$('#main').innerHTML=`<div class="cd ok">${ic('done')}<h1>${esc(t('okT'))}</h1><p>${esc(t('okP'))}</p><div class="cod">${esc(code)}</div><div style="display:grid;gap:10px;margin-top:20px"><a class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/${num}?text=${encodeURIComponent(msg)}">${ic('chat')}${esc(t('okW'))}</a><a class="btn o" href="index.html">${esc(t('okH'))}</a></div></div><div id="mineB"></div>`;scrollTo(0,0);mine()}
+async function mine(){const box=$('#mineB');if(!box||!sb||!USER)return;const r=await sb.from('orders').select('order_no,product_name,variant,qty,total,status,created_at').order('created_at',{ascending:false}).limit(10);if(r.error||!box.isConnected)return;
+if(!r.data.length){if(!$('#f'))return;box.innerHTML='';return}
+box.innerHTML=`<div class="cd" style="margin-top:22px"><h2>${esc(t('mine'))}</h2>${r.data.map(o=>`<div class="mo"><div><b>AV-${o.order_no} · ${esc(o.product_name)}${o.variant?' ('+esc(o.variant)+')':''} × ${o.qty}</b><br><span>${fmt(o.total)} · ${new Date(o.created_at).toLocaleDateString(L==='bn'?'bn-BD':'en-GB')}</span></div><span class="st">${esc(t('s_'+o.status))}</span></div>`).join('')}</div>`}
+function goLogin(){sset('aurevo-next',location.pathname.split('/').pop()+location.search);location.href='index.html#login'}
+function loadSB(){return(async()=>{if(window.supabase)return;try{const m=await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.0/+esm');window.supabase={createClient:m.createClient}}catch(x){await new Promise((ok,no)=>{const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.110.0/dist/umd/supabase.js';s.onload=ok;s.onerror=no;document.head.appendChild(s)})}})()}
+(async()=>{applyTheme(sget('aurevo-theme')||'dark');document.documentElement.lang=L;
+try{D=await (await fetch('products.json')).json()}catch(e){$('#main').innerHTML=`<div class="need"><p>products.json</p></div>`;return}
+P=D.products.find(x=>x.id===qs.get('p'));V=Math.min(+qs.get('v')||0,P&&P.variants?P.variants.length-1:0);if(P)$('#bk').href='index.html#p='+P.id;
+if(authOn()){try{await loadSB();sb=window.supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON_KEY);const r=await sb.auth.getSession();USER=r.data.session?r.data.session.user:null}catch(e){console.error(e)}}
+draw()})();
+</script>
+</body>
+</html>
