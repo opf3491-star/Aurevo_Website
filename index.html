@@ -463,7 +463,7 @@ function setOv(){const m=$('#lgc').dataset.mode||'in';$('#ovT').textContent=t('o
 $('#ovB').onclick=()=>setMode($('#lgc').dataset.mode==='in'?'up':'in');$$('[data-sw]').forEach(b=>b.onclick=()=>setMode(b.dataset.sw));
 function renderAcct(){const a=$('#acct'),l=$('#lgn');if(!authOn()){a.hidden=l.hidden=true;return}a.hidden=!USER;l.hidden=!!USER;a.textContent='';if(USER){const m=USER.user_metadata||{},u=m.avatar_url||m.picture;if(u){const i=document.createElement('img');i.src=u;i.alt='';i.referrerPolicy='no-referrer';a.appendChild(i)}else a.textContent=((m.full_name||m.name||USER.email||'?')[0]||'?').toUpperCase()}}
 function openLogin(){authMsg('');setMode('in');$('#login').showModal()}
-function goNext(){const nx=sget('aurevo-next');if(nx&&/^order\.html\?p=[\w-]+(&v=\d+)?$/.test(nx)){sset('aurevo-next','');location.href=nx;return true}return false}
+function goNext(){const nx=sget('aurevo-next');if(nx&&/^(order\.html\?p=[\w-]+(&v=\d+)?|admin\.html)$/.test(nx)){sset('aurevo-next','');location.href=nx;return true}return false}
 async function initAuth(){renderAcct();if(!authOn())return;try{await loadSB();sb=window.supabase.createClient(CFG.SUPABASE_URL,CFG.SUPABASE_ANON_KEY);const r=await sb.auth.getSession();USER=r.data.session?r.data.session.user:null;renderAcct();
 if(USER&&goNext())return;if(!USER&&location.hash==='#login')openLogin();
 sb.auth.onAuthStateChange((ev,s)=>{USER=s?s.user:null;renderAcct();if(USER&&goNext())return;if(USER&&$('#login').open){$('#login').close();if(pend){const p=D&&D.products.find(x=>x.id===pend.id);const k=pend.vi;pend=null;sset('aurevo-pend','');if(p)showWarn(p,k)}}if(cur)buildRv(cur)})}catch(e){console.error(e)}}
